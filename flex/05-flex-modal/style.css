@@ -48,6 +48,7 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  flex-shrink: 0;
 }
 
 button {
@@ -66,4 +67,41 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+/* solution */
+
+
+.flexbox {
+  display: flex;
+  gap:15px;
+}
+
+.centered {
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  padding: 15px;
+}
+
+.icon {
+  flex: 1 0 0%;
+}
+
+#right {
+  flex: 9 0 0%;
+}
+
+.prompt {
+  font-size: x-large;
+  font-weight: 700;
+  margin-right: auto;
+}
+
+.modal-body {
+  display: flex;
+  gap:15px;
+  flex-direction: column;
 }
